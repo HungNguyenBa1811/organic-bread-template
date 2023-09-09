@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import './App.css';
 import Logo from './logo-w.png'
 import { useState } from 'react';
-import { Navbar, Container, Image, Offcanvas, Button, ButtonGroup, CardGroup, Card, Row, Col, Form } from 'react-bootstrap'
+import { Navbar, Container, Image, Offcanvas, Button, ButtonGroup, CardGroup, Card, Row, Col, Form, ListGroup } from 'react-bootstrap'
 
 import breadList, {browniesList} from './data';
 
@@ -63,17 +63,31 @@ function App() {
           <Offcanvas show={show} onHide={handleClose}>
             <Offcanvas.Header closeButton>
               <Offcanvas.Title>
-                Nothing here
+                Navigation Panel
               </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-              <a href='#'>Home</a>
+              <ListGroup>
+                <ListGroup.Item>
+                  <a href='#'>Home</a>
+
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  <a href="#">About Us</a>
+
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  <a href='#'>Menus</a>
+
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  <a href='#'>Landing</a>
+
+                </ListGroup.Item>
+              </ListGroup>
               <br />
-              <a href="#">About Us</a>
               <br />
-              <a href='#'>Menus</a>
               <br />
-              <a href='#'>Landing</a>
               <br />
             </Offcanvas.Body>
           </Offcanvas>
@@ -86,20 +100,20 @@ function App() {
           <h2>Our Products</h2>
           <p>Vitae turpis massa sed elementum tempus egestas sed sed. <br /> Blandit massa enim nec dui nunc mattis enim.</p>
           <Row className='btn_group_1'>
-            <Col>
-              <Button>bakery</Button>
+            <Col lg={3} md={6} sm={12} xs={12}>
+              <Button className='btn_1st_section'>bakery</Button>
             </Col>
-            <Col>
-              <Button>cookiezi</Button>
+            <Col lg={3} md={6} sm={12} xs={12}>
+              <Button className='btn_1st_section'>cookiezi</Button>
             </Col>
-            <Col>
-              <Button>cakes</Button>
+            <Col lg={3} md={6} sm={12} xs={12}>
+              <Button className='btn_1st_section'>cakes</Button>
             </Col>
-            <Col>
-              <Button>other</Button>
+            <Col lg={3} md={6} sm={12} xs={12}>
+              <Button className='btn_1st_section'>other</Button>
             </Col>
           </Row>
-          <p>Image from <a href='https://www.pixiv.net/en/'>Pixiv</a> </p>
+          <p className='credit'>Image from <a href='https://www.pixiv.net/en/'>Pixiv</a> </p>
         </Container>
       </Container>
 
