@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import './App.css';
 import Logo from './logo-official.png'
 import { useState } from 'react';
-import { Navbar, Container, Image, Offcanvas, Button, ButtonGroup, CardGroup, Card, Row, Col, Form, ListGroup, InputGroup } from 'react-bootstrap'
+import { Navbar, Container, Image, Offcanvas, Button, Card, Row, Col, Form, ListGroup, InputGroup } from 'react-bootstrap'
 
 import breadList, {browniesList} from './data';
 
