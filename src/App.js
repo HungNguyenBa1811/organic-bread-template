@@ -78,19 +78,19 @@ function App() {
             <Offcanvas.Body>
               <ListGroup>
                 <ListGroup.Item>
-                  <a onClick={getRickRolled}>Home</a>
+                  <a href="https://youtu.be/dQw4w9WgXcQ"onClick={getRickRolled}>Home</a>
 
                 </ListGroup.Item>
                 <ListGroup.Item>
-                  <a onClick={getRickRolled}>About Us</a>
+                  <a href="https://youtu.be/UYNpkDrCWtA"onClick={getRickRolled}>About Us</a>
 
                 </ListGroup.Item>
                 <ListGroup.Item>
-                  <a onClick={getRickRolled}>Menus</a>
+                  <a href="https://youtu.be/dQw4w9WgXcQ"onClick={getRickRolled}>Menus</a>
 
                 </ListGroup.Item>
                 <ListGroup.Item>
-                  <a onClick={getRickRolled}>Landing</a>
+                  <a href="https://youtu.be/dQw4w9WgXcQ"onClick={getRickRolled}>Landing</a>
 
                 </ListGroup.Item>
               </ListGroup>
@@ -205,10 +205,10 @@ function App() {
               <Col lg={4} md={4} sm={12} xs={12}>
                 <h5>call us</h5>
                 <p>
-                  <a onClick={getRickRolled}>0363 974 881</a>
+                  <a href="https://youtu.be/dQw4w9WgXcQ"onClick={getRickRolled}>0363 974 881</a>
                   <br />
                   <br />
-                  <a onClick={getRickRolled}>0386 142 616</a>
+                  <a href="https://youtu.be/dQw4w9WgXcQ"onClick={getRickRolled}>0386 142 616</a>
                 </p>
               </Col>
             </Row>
