@@ -71,7 +71,8 @@ a{
 
 .offcanvas-body .list-group-item a{
   font-size: 1.25rem;
-  color: #ffffff;
+  color: #ffffff !important;
+  cursor: pointer;
   margin: 8px 0;
 }
 
