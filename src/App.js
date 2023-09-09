@@ -1,9 +1,9 @@
 // import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import './App.css';
-import Logo from './logo-w.png'
+import Logo from './logo-official.png'
 import { useState } from 'react';
-import { Navbar, Container, Image, Offcanvas, Button, ButtonGroup, CardGroup, Card, Row, Col, Form, ListGroup } from 'react-bootstrap'
+import { Navbar, Container, Image, Offcanvas, Button, ButtonGroup, CardGroup, Card, Row, Col, Form, ListGroup, InputGroup } from 'react-bootstrap'
 
 import breadList, {browniesList} from './data';
 
@@ -19,6 +19,15 @@ function App() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   
+  const getRickRolled = () => {
+    window.open('https://youtu.be/dQw4w9WgXcQ', '_blank');
+    alert("Haha u got Rickrolled!!! XDXDXD")
+  }
+  
+  const getCookiezi = () => {
+    window.open('https://youtu.be/UYNpkDrCWtA', '_blank');
+    alert("WYSI When You See It 727 When You Fucking See It Cookiezi Godmode")
+  }
   // key={bread.name + idx}
   // text={bread.toUpperCase()}
   // style={{ width: '18rem' }}
@@ -69,19 +78,19 @@ function App() {
             <Offcanvas.Body>
               <ListGroup>
                 <ListGroup.Item>
-                  <a href='#'>Home</a>
+                  <a onClick={getRickRolled}>Home</a>
 
                 </ListGroup.Item>
                 <ListGroup.Item>
-                  <a href="#">About Us</a>
+                  <a onClick={getRickRolled}>About Us</a>
 
                 </ListGroup.Item>
                 <ListGroup.Item>
-                  <a href='#'>Menus</a>
+                  <a onClick={getRickRolled}>Menus</a>
 
                 </ListGroup.Item>
                 <ListGroup.Item>
-                  <a href='#'>Landing</a>
+                  <a onClick={getRickRolled}>Landing</a>
 
                 </ListGroup.Item>
               </ListGroup>
@@ -97,16 +106,16 @@ function App() {
           <p>Vitae turpis massa sed elementum tempus egestas sed sed. <br /> Blandit massa enim nec dui nunc mattis enim.</p>
           <Row className='btn_group_1'>
             <Col lg={3} md={6} sm={12} xs={12}>
-              <Button className='btn_1st_section'>bakery</Button>
+              <Button className='btn_1st_section' onClick={getRickRolled}>bakery</Button>
             </Col>
             <Col lg={3} md={6} sm={12} xs={12}>
-              <Button className='btn_1st_section'>cookiezi</Button>
+              <Button className='btn_1st_section' onClick={getCookiezi}>cookiezi</Button>
             </Col>
             <Col lg={3} md={6} sm={12} xs={12}>
-              <Button className='btn_1st_section'>cakes</Button>
+              <Button className='btn_1st_section' onClick={getRickRolled}>cakes</Button>
             </Col>
             <Col lg={3} md={6} sm={12} xs={12}>
-              <Button className='btn_1st_section'>other</Button>
+              <Button className='btn_1st_section' onClick={getRickRolled}>other</Button>
             </Col>
           </Row>
           <p className='credit'>Image from <a href='https://www.pixiv.net/en/'>Pixiv</a> </p>
@@ -128,56 +137,88 @@ function App() {
         </Container>
       </Container>
 
-      <Container>
-        <h2>Brownies, Pastries, etc</h2>
-        <Row>
-          {renderBread(browniesList_1)}
-        </Row>
-        <Row>
-          {renderBread(browniesList_2)}
-        </Row>
-        <p className='credit'>Image from <a href='https://www.pixiv.net/en/'>Pixiv</a> </p>
+      <Container fluid className='container-3'>
+        <Container>
+          <h2>Brownies, Pastries, etc</h2>
+          <div className='bread-group'>
+            <Row className='bread'>
+              {renderBread(browniesList_1)}
+            </Row>
+            <Row className='bread'>
+              {renderBread(browniesList_2)}
+            </Row>
+            <p className='credit'>Image from <a href='https://www.pixiv.net/en/'>Pixiv</a> </p>
+          </div>
+        </Container>
       </Container>
 
-      <Container fluid>
-        <h2>Contact Us</h2>
-        <p>Image from <a href='https://www.pixiv.net/en/'>Pixiv</a> </p>
-        <Form>
-          <Row>
-            <Col></Col>
-            <Col></Col>
-            <Col></Col>
-          </Row>
-        </Form>
-        <Row>
-          <Col lg={4} md={4} sm={12} xs={12}>
-            <h5>find us</h5>
-            <p>121 Rock Sreet, 21 Avenue, New York, NY 92103-9000</p>
-          </Col>
-          <Col lg={4} md={4} sm={12} xs={12}>
-            <h5>hours</h5>
-            <p>
-              <span>Monday – Saturday</span>              
-              <br />
-              9am – 7pm
-              <br />
-              <span>Sunday</span>              
-              <br />
-              10am – 6pm
-              <br />
-            </p>
-          </Col>
-          <Col lg={4} md={4} sm={12} xs={12}>
-            <h5>call us</h5>
-            <p>
-              <a href='#'> 1 (234) 567-891</a>
-              <br />
-              <br />
-              <a href='#'>2 (345) 333-897</a>
-            </p>
-          </Col>
-        </Row>
+      <Container fluid className="container-footer">
+        <Container>
+          <h2>Contact Us</h2>
+          <p className='credit'>Image from <a href='https://www.pixiv.net/en/'>Pixiv</a> </p>
+          <Form className='form-submit'>
+            <Row>
+              <Form.Group as={Col} md="6" controlId='validationCustom01'>
+                <Form.Label>Email</Form.Label>
+                <Form.Control
+                  className='input-field'
+                  type="email"
+                  placeholder="Enter a valid email address"
+                  required
+                />
+              </Form.Group>
+              <Form.Group as={Col} md="6" controlId='validationCustom01'>
+                <Form.Label>Username</Form.Label>
+                <InputGroup>
+                  <Form.Control
+                    className='input-field'
+                    type="text"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </InputGroup>
+              </Form.Group>
+              <Col md={12}>
+                <Button as={Col} md="12" type="button" className='btn-submit-form' onClick={getRickRolled}>Submit</Button>
+              </Col>
+            </Row>
+          </Form>
+          <div className='social-credit'>
+            <Row>
+              <Col lg={4} md={4} sm={12} xs={12}>
+                <h5>find us</h5>
+                <p>121 Rock Sreet, 21 Avenue, New York, NY 92103-9000</p>
+              </Col>
+              <Col lg={4} md={4} sm={12} xs={12}>
+                <h5>hours</h5>
+                <p>
+                  <span className='bold'>Monday – Saturday</span>              
+                  <br />
+                  9am – 7pm
+                  <br />
+                  <span className='bold'>Sunday</span>              
+                  <br />
+                  10am – 6pm
+                  <br />
+                </p>
+              </Col>
+              <Col lg={4} md={4} sm={12} xs={12}>
+                <h5>call us</h5>
+                <p>
+                  <a onClick={getRickRolled}>0363 974 881</a>
+                  <br />
+                  <br />
+                  <a onClick={getRickRolled}>0386 142 616</a>
+                </p>
+              </Col>
+            </Row>
+          </div>
+        </Container>
       </Container>
+
+      <div class="footer container-fluid">
+        <div class="copyright">Powered By JoeyNguyen0302 © Copyright 2023</div>
+    </div>
     </>
   );
 }

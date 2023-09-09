@@ -1,5 +1,5 @@
 @import url('https://pro.fontawesome.com/releases/v5.11.1/css/all.css');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;700;800&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -31,15 +31,34 @@ code {
   background-color: #e5e5e5;
 }
 
-.container-2 .bread-group{
+.bread-group{
   margin-top: 50px;
   min-height: 915px;
 }
 
-.container-2 .bread-group .bread{
+.bread-group .bread{
   margin-bottom: 25px;
 }
 
+.container-3{
+  background-color: #1a1a1a;
+  overflow: auto;
+}
+
+.container-footer{
+  overflow: auto;
+  background-image: url('./img/bg-2.jpg');
+  background-size: cover;
+}
+
+@media (min-width: 1400px) {
+  .container{
+    max-width: 1200px !important;
+  }
+  .container-footer > .container {
+    max-width: 727px !important;
+  }
+}
 /* text */
 a{
   text-decoration: none !important;
@@ -65,8 +84,10 @@ a{
   margin: 338px auto 0;
 }
 
-.container-2 h2{
-  margin: 60px auto 0;
+.container-2 h2,
+.container-3 h2,
+.container-footer h2{
+  margin: 70px auto 0;
 }
 
 .container p{
@@ -78,11 +99,14 @@ a{
 
 .container-1 h2,
 .container-1 p{
-  color: white;
+  color: #ffffff;
 }
 
 .container-1 p.credit,
-.container-2 p.credit{
+.container-2 p.credit,
+.container-3 p.credit,
+.container-footer p.credit{
+  color: #ffffff;
   margin: 30px auto 60px;
   font-size: 1.125rem;
   font-weight: 300;
@@ -90,24 +114,30 @@ a{
 }
 
 .container-1 p.credit a,
-.container-2 p.credit a{
+.container-2 p.credit a,
+.container-3 p.credit a,
+.container-footer p.credit a{
   color: #ffffff;
   text-decoration: underline !important;
 }
 
 .container-2 p.credit,
-.container-2 p.credit a{
+.container-2 p.credit a,
+.container-footer p.credit,
+.container-footer p.credit a{
   color: #000000;
 }
 
-@media (min-width: 1400px) {
-  .container{
-    max-width: 1200px !important;
-  }
-}a
+.container-3 h2{
+  color: #ffffff;
+}
+
+.container-footer p.credit{
+  margin: 22px auto 0;
+}
 /* button */
-.btn-close {
-  filter: invert(1) brightness(2);
+.btn-close{
+  filter: invert(1) brightness(200%) !important;
 }
 
 .btn_menu{
@@ -127,15 +157,27 @@ a{
 }
 .btn_group_1 .btn_1st_section{
   background: transparent;
-  border: 2px solid;
+  color: #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 50px;
   text-transform: uppercase;
   font-size: 1rem;
   letter-spacing: 2px;
   padding: 10px 48px 10px 46px;
   font-weight: 700;
+  transition: 0.2s ease-in-out;
 }
-
+.btn_group_1 .btn_1st_section:hover,
+.btn_group_1 .btn_1st_section:focus{
+  background-color: #ffffff;
+  color: #000000;
+  border: 2px solid #ffffff;
+}
+.btn_group_1 .btn_1st_section:active{
+  background-color: transparent !important;
+  color: #ffffff !important;
+  border: 2px solid #ffffff !important;
+}
 /* card */
 .card *,
 .card {
@@ -191,4 +233,72 @@ a{
 .card-footer a{
   color: #000000;
   border-bottom: 1px solid #000000;
+}
+
+/* form */
+.form-submit{
+  margin: 41px auto 0;
+}
+.form-submit .row .col-md-6,
+.form-submit .row .col-md-6 input{
+  text-align: left;
+}
+.form-submit .row .col-md-6{
+  padding-left: 32px;
+  margin-bottom: 32px;
+}
+.form-submit .input-field{
+  border: 1px solid #b3b3b3;
+  border-radius: 20px;
+  padding: 10px 12px;
+}
+.form-submit .row .col-md-12{
+  padding-left: 32px;
+}
+.form-submit .btn-submit-form{
+  background-color: #000000;
+  color: #ffffff;
+  border: transparent;
+  border-radius: 20px;
+  margin-bottom: 32px;
+  padding: 9px 0 11px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.form-submit .btn-submit-form:hover{
+  background-color: #4d4d4d;
+  color: #ffffff;
+}
+
+/* social information */
+.social-credit{
+  margin: 56px auto 60px;
+}
+.social-credit h5{
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 1.375rem;
+  text-transform: uppercase;
+}
+.social-credit p{
+  font-family: "Open Sans";
+  font-size: 1.125rem;
+  letter-spacing: normal;
+}
+.social-credit .bold{
+  font-weight: 700;
+}
+.social-credit a{
+  color: #000000;
+  font-weight: 700;
+}
+
+/* footer */
+.footer{
+  overflow: auto;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 10px 0;
 }
