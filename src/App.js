@@ -216,8 +216,8 @@ function App() {
         </Container>
       </Container>
 
-      <div class="footer container-fluid">
-        <div class="copyright">Powered By JoeyNguyen0302 © Copyright 2023</div>
+      <div className="footer container-fluid">
+        <div className="copyright">Powered By JoeyNguyen0302 © Copyright 2023</div>
     </div>
     </>
   );
