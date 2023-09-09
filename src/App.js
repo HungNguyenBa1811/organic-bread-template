@@ -37,7 +37,7 @@ function App() {
               </Card.Text>
             </Card.Body>
             <Card.Footer>
-              <small className="text-muted">Last updated 3 mins ago</small>
+              <a href={bread.url}>more</a>
             </Card.Footer>
           </Card>
         </Col>
@@ -85,10 +85,6 @@ function App() {
 
                 </ListGroup.Item>
               </ListGroup>
-              <br />
-              <br />
-              <br />
-              <br />
             </Offcanvas.Body>
           </Offcanvas>
 
@@ -117,15 +113,19 @@ function App() {
         </Container>
       </Container>
 
-      <Container>
-        <h2>Organic Breads</h2>
-        <Row>
-          {renderBread(breadList_1)}
-        </Row>
-        <Row>
-          {renderBread(breadList_2)}
-        </Row>
-        <p>Image from <a href='https://www.pixiv.net/en/'>Pixiv</a> </p>
+      <Container fluid className='container-2'>
+        <Container>
+          <h2>Organic Breads</h2>
+          <div className='bread-group'>
+            <Row className='bread'>
+              {renderBread(breadList_1)}
+            </Row>
+            <Row className='bread'>
+              {renderBread(breadList_2)}
+            </Row>
+          </div>
+          <p className='credit'>Image from <a href='https://www.pixiv.net/en/'>Pixiv</a> </p>
+        </Container>
       </Container>
 
       <Container>
@@ -136,7 +136,7 @@ function App() {
         <Row>
           {renderBread(browniesList_2)}
         </Row>
-        <p>Image from <a href='https://www.pixiv.net/en/'>Pixiv</a> </p>
+        <p className='credit'>Image from <a href='https://www.pixiv.net/en/'>Pixiv</a> </p>
       </Container>
 
       <Container fluid>

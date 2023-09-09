@@ -1,9 +1,10 @@
 @import url('https://pro.fontawesome.com/releases/v5.11.1/css/all.css');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400&display=swap');
 * {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans';
+  text-align: center;
 }
 
 code {
@@ -18,15 +19,25 @@ code {
   color: #ffffff;
 }
 
-.offcanvas-body{
-  text-align: center;
-}
-
 .container-1{
   overflow: auto;
   background-image: url('./img/bg-1.jpg');
   /* background-position: 50% 0; */
   background-size: cover;
+}
+
+.container-2{
+  overflow: auto;
+  background-color: #e5e5e5;
+}
+
+.container-2 .bread-group{
+  margin-top: 50px;
+  min-height: 915px;
+}
+
+.container-2 .bread-group .bread{
+  margin-bottom: 25px;
 }
 
 /* text */
@@ -46,9 +57,16 @@ a{
 }
 
 .container h2{
-  margin: 338px auto 0;
   font-family: 'Montserrat';
   font-size: 3.4375rem;
+}
+
+.container-1 h2{
+  margin: 338px auto 0;
+}
+
+.container-2 h2{
+  margin: 60px auto 0;
 }
 
 .container p{
@@ -61,21 +79,32 @@ a{
 .container-1 h2,
 .container-1 p{
   color: white;
-  text-align: center;
 }
 
-.container-1 p.credit{
+.container-1 p.credit,
+.container-2 p.credit{
   margin: 30px auto 60px;
-  font-size: 1rem;
+  font-size: 1.125rem;
   font-weight: 300;
   letter-spacing: normal;
 }
 
-.container-1 p.credit a{
+.container-1 p.credit a,
+.container-2 p.credit a{
   color: #ffffff;
   text-decoration: underline !important;
 }
 
+.container-2 p.credit,
+.container-2 p.credit a{
+  color: #000000;
+}
+
+@media (min-width: 1400px) {
+  .container{
+    max-width: 1200px !important;
+  }
+}a
 /* button */
 .btn-close {
   filter: invert(1) brightness(2);
@@ -95,7 +124,6 @@ a{
 }
 .btn_group_1{
   margin-top: 39px !important;
-  text-align: center;
 }
 .btn_group_1 .btn_1st_section{
   background: transparent;
@@ -106,4 +134,61 @@ a{
   letter-spacing: 2px;
   padding: 10px 48px 10px 46px;
   font-weight: 700;
+}
+
+/* card */
+.card *,
+.card {
+  border-radius: 0 !important;
+}
+
+.card{
+  background-image: none;
+  box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.2);
+  padding: 20px 20px 30px;
+  /* max-width: 100%; */
+  max-height: 450px;
+  justify-content: flex-start;
+}
+
+.card-body{
+  padding: 0 !important;
+}
+
+.card-img-top{
+  height: 195px;
+  overflow: hidden;
+  object-fit: cover;
+  display: block;
+  box-sizing: border-box;
+  /* vertical-align: middle; */
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.card-title.h5{
+  font-family: 'Montserrat';
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 20px auto 0;
+}
+
+.card-text{
+  font-size: 1rem !important;
+  font-style: italic;
+  margin: 20px 0 0;
+  word-wrap: break-word;
+  letter-spacing: normal !important;
+}
+
+.card-footer{
+  background-color: transparent !important;
+  border: 0 !important;
+  margin: 20px auto 0;
+}
+
+.card-footer a{
+  color: #000000;
+  border-bottom: 1px solid #000000;
 }
