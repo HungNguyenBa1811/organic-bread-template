@@ -1,0 +1,69 @@
+@import url('https://pro.fontawesome.com/releases/v5.11.1/css/all.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+/* container */
+.offcanvas-header,
+.offcanvas-body{
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.container-1{
+  overflow: auto;
+  background-image: url('./img/bg-1.jpg');
+  /* background-position: 50% 0; */
+  background-size: cover;
+}
+
+/* text */
+.container h2{
+  margin: 338px auto 0;
+  font-family: 'Montserrat';
+  font-size: 3.4375rem;
+}
+
+.container p{
+  font-family: 'Open Sans';
+  font-size: 1.5rem;
+  margin: 31px auto 0;
+  letter-spacing: 1px;
+}
+
+.container-1 h2,
+.container-1 p{
+  color: white;
+  text-align: center;
+}
+
+/* button */
+/* .btn-close{
+  --bs-btn-close-bg:
+  brightness(1000%) !important;
+  filter: brightness(1000%) !important;
+} */
+.btn_menu{
+  background-color: transparent !important;
+  border: transparent !important;
+}
+.btn_menu i{
+  color: #000000;
+  transition: color 0.2s ease-in-out !important;
+
+}
+.btn_menu:hover i{
+  color: orange;
+}
+.btn_group_1{
+  margin-top: 39px !important;
+}
