@@ -1,6 +1,6 @@
-import { Container, Row, Col, Image, Button, Form, InputGroup, Card } from 'react-bootstrap'
-import MiniLogo from '../img/minilogo.png'
-import BGElement from '../img/bg-home-5.jpg'
+import { Container, Row, Col, Image, Button, Form, InputGroup, Card } from 'react-bootstrap';
+import MiniLogo from '../img/minilogo.png';
+import BGElement from '../img/bg-home-5.jpg';
 import breadList from '../data';
 import { breadDetails } from '../data';
 
