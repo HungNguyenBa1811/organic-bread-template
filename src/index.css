@@ -103,10 +103,7 @@ a{
   color: #ffffff;
 }
 
-.container-1 p.credit,
-.container-2 p.credit,
-.container-3 p.credit,
-.container-footer p.credit{
+p.credit{
   color: #ffffff;
   margin: 30px auto 60px;
   font-size: 1.125rem;
@@ -114,18 +111,13 @@ a{
   letter-spacing: normal;
 }
 
-.container-1 p.credit a,
-.container-2 p.credit a,
-.container-3 p.credit a,
-.container-footer p.credit a{
+p.credit a{
   color: #ffffff;
   text-decoration: underline !important;
 }
 
-.container-2 p.credit,
-.container-2 p.credit a,
-.container-footer p.credit,
-.container-footer p.credit a{
+p.credit.credit-black,
+p.credit.credit-black a{
   color: #000000;
 }
 

@@ -102,3 +102,42 @@ export const browniesList = [
         url: brownies_8
     },
 ]
+
+export const breadDetails = [
+    {
+        name: "glassic baguette",
+        details: "Unbleached organic wheat flour, whole rye flour, water, sea salt, yeast"
+    },
+    {
+        name: "baguette",
+        details: "Naturally leavened baguette made using the Five Points Levain dough. This baguette is crustier and chewier than the Classic Baguette"
+    },
+    {
+        name: "pekan raisin",
+        details: "Naturally leavened bread made using the French Country dough with the additions of local Georgia pecans and Thompson raisins"
+    },
+    {
+        name: "geveryday french",
+        details: "Everyday table loaf made using the Classic Baguette dough"
+    },
+    {
+        name: "multigrain",
+        details: "Naturally leavened bread made using the French Country dough with the additions of millet, quinoa, rolled oats, flax seeds, and sunflower seeds"
+    },
+    {
+        name: "danish rye",
+        details: "Whole rye flour, cracked rye berries, water, natural leaven culture made with rye flour, pumpkin seeds, sunflower seeds, barley malt syrup, sea salt"
+    },
+    {
+        name: "levain",
+        details: "Unbleached organic wheat flour, whole rye flour, water, natural leaven culture, sea salt"
+    },
+    {
+        name: "ciabatta",
+        details: "Unbleached organic wheat flour, whole rye flour, water, natural leaven culture, sea salt, yeast"
+    },
+    {
+        name: "handmade bread",
+        details: "Naturally leavened bread made using the Sourdough Rye dough and studded with dried black currants"
+    }
+]
