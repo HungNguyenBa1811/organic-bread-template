@@ -15,6 +15,11 @@
 .container-home-bg-3{
     background-image: url('./img/bg-home-6.jpg');
 }
+.container-footer.container-footer-bg{
+    background-image: url('./img/bg-footer-2.jpg');
+    background-position: 50% 50%;
+    overflow: visible;
+}
 .homebg{
     background-size: cover;
     min-height: 635px;
@@ -40,6 +45,7 @@
     margin: 60px auto 0;
     font-size: 3rem;
     font-family: 'Montserrat';
+    font-weight: 400;
 }
 .container-clearfix h2.text-white{
     color: #ffffff;
@@ -53,6 +59,7 @@
     font-size: 3rem;
     font-family: "Montserrat";
     word-wrap: break-word;
+    font-weight: 400;
 }
 .container-home-layout .text-layout{
     margin: 30px 13px 0;
@@ -84,4 +91,82 @@
 .btn-readmore:active{
     color: #404040 !important;
     background-color: transparent !important;
+}
+
+.card.card-special{
+    height: 190px !important;
+    /* overflow: auto; */
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #f6f6f8;
+    border-radius: 20px !important;
+}
+.card.card-special .card-special-body .card-special-title,
+.card.card-special .card-special-body .card-special-text{
+    text-align: left !important;
+}
+.card.card-special .card-special-body::before{
+    opacity: 0.6;
+}
+.card.card-special .card-special-body .card-special-title{
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: normal;
+}
+.card.card-special .card-special-body .card-special-text{
+    margin: 20px 0 0;
+}
+
+.text-container-end{
+    margin: 59px auto 0;
+    word-wrap: break-word;
+}
+.img-layout-2{
+    height: 734px;
+    margin-top: 11px;
+    object-fit: contain;
+}
+
+.card.card-review{
+    background-color: #f2952d;
+    color: #ffffff;
+    padding: 0 30px 30px;
+}
+.card.card-review * {
+    text-align: left;
+}
+.card.card-review .card-review-header.card-header{
+    border: 0;
+    background-color: transparent;
+}
+.card.card-review .card-review-header.card-header .quote-block{
+    display: block;
+    height: 76px;
+    width: 76px;
+    margin: -28px auto 0 0;
+    border-radius: 50% !important;
+    padding: 14px;
+    background-color: #ffffff;
+}
+.card.card-review .card-review-header.card-header .quote-block i{
+    color: #f2952d;
+}
+
+.card.card-review .card-review-footer{
+    margin: 0;
+    padding: 0;
+}
+.card.card-review .card-review-footer .card-review-author{
+    letter-spacing: normal;
+    word-wrap: break-word;
+    margin: 30px 0 0;
+}
+
+.container-footer.container-footer-bg h2{
+    font-size: 3.4375rem;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+.container-footer.container-footer-bg .social-credit *{
+    text-align: left;
 }

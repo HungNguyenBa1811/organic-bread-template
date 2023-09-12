@@ -141,3 +141,22 @@ export const breadDetails = [
         details: "Naturally leavened bread made using the Sourdough Rye dough and studded with dried black currants"
     }
 ]
+
+export const review = [
+    {
+        name: "celia almeda",
+        comment:"Proin sed libero enim sed faucibus turpis. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Ut sem nulla pharetra diam sit amet nisl."
+    },
+    {
+        name: "frank kinney",
+        comment:"Proin sed libero enim sed faucibus turpis. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Ut sem nulla pharetra diam sit amet nisl."
+    },
+    {
+        name: "sam perry",
+        comment:"Proin sed libero enim sed faucibus turpis. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Ut sem nulla pharetra diam sit amet nisl."
+    },
+    {
+        name: "marry hudson",
+        comment:"Proin sed libero enim sed faucibus turpis. At imperdiet dui accumsan sit amet nulla facilisi morbi tempus. Ut sem nulla pharetra diam sit amet nisl."
+    },
+]
