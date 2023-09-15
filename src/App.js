@@ -3,10 +3,8 @@ import ContactPage from './pages/Contact'
 import MenuPage from './pages/Menu'
 import LandingPage from './pages/Landing'
 
-// import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import './App.css';
-import Logo from './img/logo-official.png'
+import { Logo } from './handler/imgHandler';
 import { Routes, Route, Link } from 'react-router-dom';
 import { useState } from 'react';
 import { Navbar, Container, Image, Offcanvas, Button, ListGroup } from 'react-bootstrap'

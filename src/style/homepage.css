@@ -4,19 +4,19 @@
     overflow: auto;
 }
 .container-home-bg-1{
-    background-image: url('./img/bg-home-2.jpg');
+    background-image: url('../img/bg-home-2.jpg');
     background-position: 50% 50%;
     /* min-height: 889px; */
 }
 .container-home-bg-2{
-    background-image: url('./img/bg-home-4.jpg');
+    background-image: url('../img/bg-home-4.jpg');
     background-position: 50% 50%;
 }
 .container-home-bg-3{
-    background-image: url('./img/bg-home-6.jpg');
+    background-image: url('../img/bg-home-6.jpg');
 }
 .container-footer.container-footer-bg{
-    background-image: url('./img/bg-footer-2.jpg');
+    background-image: url('../img/bg-footer-2.jpg');
     background-position: 50% 50%;
     overflow: visible;
 }
@@ -27,10 +27,10 @@
     padding: 30px;
 }
 .homebg-img-1{
-    background-image: url('./img/bg-home-1.jpg');
+    background-image: url('../img/bg-home-1.jpg');
 }
 .homebg-img-3{
-    background-image: url('./img/bg-home-3.jpg');
+    background-image: url('../img/bg-home-3.jpg');
 }
 .container-clearfix{
     display: flex;
@@ -127,6 +127,21 @@
     object-fit: contain;
 }
 
+.fixed-height.card-text{
+    margin: 20px 0 0;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+.card-btn-fixed-height{
+    position: relative;
+}
+.card-btn-fixed-height .btn-fixed-height{
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+}
 .card.card-review{
     background-color: #f2952d;
     color: #ffffff;
@@ -151,7 +166,12 @@
 .card.card-review .card-review-header.card-header .quote-block i{
     color: #f2952d;
 }
-
+.card.card-review .card-body .card-review-text{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+}
 .card.card-review .card-review-footer{
     margin: 0;
     padding: 0;

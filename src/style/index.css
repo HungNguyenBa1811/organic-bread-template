@@ -21,7 +21,7 @@ code {
 
 .container-1{
   overflow: auto;
-  background-image: url('./img/bg-1.jpg');
+  background-image: url('../img/bg-1.jpg');
   /* background-position: 50% 0; */
   background-size: cover;
 }
@@ -47,7 +47,7 @@ code {
 
 .container-footer{
   overflow: auto;
-  background-image: url('./img/bg-2.jpg');
+  background-image: url('../img/bg-2.jpg');
   background-size: cover;
 }
 
@@ -183,7 +183,7 @@ p.credit.credit-black a{
   box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.2);
   padding: 20px 20px 30px;
   /* max-width: 100%; */
-  max-height: 450px;
+  height: 450px !important;
   justify-content: flex-start;
 }
 

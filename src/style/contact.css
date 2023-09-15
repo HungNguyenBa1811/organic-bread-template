@@ -1,0 +1,65 @@
+.potrait{
+    background-size: cover;
+    background-position: 50%;
+    background-clip: padding-box;
+    min-height: 525px;
+    border: 25px solid transparent;
+}
+.potrait-1{
+    background-image: url('../img/potrait-1.jpg');
+}
+.potrait-2{
+    background-image: url('../img/potrait-2.jpg');
+}
+.container-contact-2{
+    background-image: url('../img/potrait-4.jpg');
+}
+
+.rectangle{
+    position: absolute;
+    z-index: -10;
+    height: 444px;
+    margin-top: 350px;
+    margin-bottom: 0;
+    background-color: #f2f2f2;
+}
+
+.container-contact-1{
+    min-height: 1420px;
+}
+.container-contact-1 .textbox-contact{
+    border: 25px solid transparent;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.container-contact-1 .textbox-contact h3{
+    margin: 0;
+    text-align: left;
+    font-size: 2.5rem;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+.container-contact-1 .description{
+    border: 25px solid transparent;
+}
+.container-contact-1 .description *{
+    text-align: left;
+}
+.container-contact-1 button{
+    float: left;
+    margin: 28px 0 0;
+}
+.container-contact-1 .description-h4{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1.875rem;
+    margin-bottom: 0;
+}
+.container-contact-1 .description-p{
+    margin: 28px 0 0;
+    font-size: 1.125rem;
+    line-height: 2;
+}

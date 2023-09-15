@@ -1,8 +1,6 @@
 import { Container, Row, Col, Image, Button, Form, InputGroup, Card } from 'react-bootstrap';
-import MiniLogo from '../img/minilogo.png';
-import BGElement from '../img/bg-home-5.jpg';
-import breadList from '../data';
-import { breadDetails, review } from '../data';
+import { MiniLogo, BGElement } from '../handler/imgHandler';
+import breadList, { breadDetails, review } from '../handler/data';
 
 const breadList_1 = breadList.slice(0,4)
 
@@ -15,12 +13,12 @@ const Home = () => {
                 <Card.Img variant="top" src={bread.url} />
                 <Card.Body>
                   <Card.Title>{bread.name.toUpperCase()}</Card.Title>
-                  <Card.Text>
+                  <Card.Text className='fixed-height'>
                     {bread.details}
                   </Card.Text>
                 </Card.Body>
-                <Card.Footer>
-                  <a href={bread.url}>more</a>
+                <Card.Footer className='card-btn-fixed-height'>
+                  <a href={bread.url} className='btn-fixed-height'>more</a>
                 </Card.Footer>
               </Card>
             </Col>
